@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)logIn:(id)sender;
+- (IBAction)makeShaq:(id)sender;
+- (IBAction)checkShaq:(id)sender;
+- (IBAction)deleteShaq:(id)sender;
 
 @end
 

@@ -14,6 +14,7 @@
 		CC14AD011A268ABB003381AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC14AD001A268ABB003381AC /* Images.xcassets */; };
 		CC14AD041A268ABB003381AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC14AD021A268ABB003381AC /* LaunchScreen.xib */; };
 		CC14AD101A268ABB003381AC /* ShaqAttackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC14AD0F1A268ABB003381AC /* ShaqAttackTests.m */; };
+		CC14AD1B1A28F91F003381AC /* SHQNetworkingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CC14AD1A1A28F91F003381AC /* SHQNetworkingUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		CC14AD091A268ABB003381AC /* ShaqAttackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaqAttackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC14AD0E1A268ABB003381AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC14AD0F1A268ABB003381AC /* ShaqAttackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShaqAttackTests.m; sourceTree = "<group>"; };
+		CC14AD191A28F91F003381AC /* SHQNetworkingUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHQNetworkingUtility.h; sourceTree = "<group>"; };
+		CC14AD1A1A28F91F003381AC /* SHQNetworkingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHQNetworkingUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				CC14ACF81A268ABB003381AC /* AppDelegate.m */,
 				CC14ACFA1A268ABB003381AC /* ViewController.h */,
 				CC14ACFB1A268ABB003381AC /* ViewController.m */,
+				CC14AD191A28F91F003381AC /* SHQNetworkingUtility.h */,
+				CC14AD1A1A28F91F003381AC /* SHQNetworkingUtility.m */,
 				CC14ACFD1A268ABB003381AC /* Main.storyboard */,
 				CC14AD001A268ABB003381AC /* Images.xcassets */,
 				CC14AD021A268ABB003381AC /* LaunchScreen.xib */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC14ACFC1A268ABB003381AC /* ViewController.m in Sources */,
+				CC14AD1B1A28F91F003381AC /* SHQNetworkingUtility.m in Sources */,
 				CC14ACF91A268ABB003381AC /* AppDelegate.m in Sources */,
 				CC14ACF61A268ABB003381AC /* main.m in Sources */,
 			);
@@ -412,6 +418,7 @@
 				CC14AD151A268ABB003381AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC14AD161A268ABB003381AC /* Build configuration list for PBXNativeTarget "ShaqAttackTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				CC14AD181A268ABB003381AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

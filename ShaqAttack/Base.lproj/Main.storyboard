@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +17,100 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0z-70-dQT">
+                                <rect key="frame" x="480" y="45" width="43" height="30"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LnZ-cT-YsJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bXK-tk-i9y" userLabel="Log In Text Field">
+                                <rect key="frame" x="10" y="45" width="450" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4Q-Bc-8F9">
+                                <rect key="frame" x="205" y="107" width="78" height="30"/>
+                                <state key="normal" title="Make Shaq">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeShaq:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pPU-21-13v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-Bd-JZ0">
+                                <rect key="frame" x="39" y="192" width="84" height="30"/>
+                                <state key="normal" title="Check Shaq">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkShaq:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="edI-bV-yH1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWA-Qe-qll">
+                                <rect key="frame" x="223" y="192" width="84" height="30"/>
+                                <state key="normal" title="Delete Shaq">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteShaq:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CRS-fg-wV4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many basketballs?" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H6z-1l-YvQ">
+                                <rect key="frame" x="10" y="107" width="175" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="773" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCe-ZG-DPw" userLabel="Response Label">
+                                <rect key="frame" x="10" y="260" width="580" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.99173903529999996" blue="0.074646009469999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j0z-70-dQT" firstAttribute="leading" secondItem="l4Q-Bc-8F9" secondAttribute="leading" id="18A-Ts-dUB"/>
+                            <constraint firstItem="bXK-tk-i9y" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="3eX-N5-jiB"/>
+                            <constraint firstItem="H6z-1l-YvQ" firstAttribute="top" secondItem="bXK-tk-i9y" secondAttribute="bottom" constant="32" id="5hU-rE-ptD"/>
+                            <constraint firstItem="6Io-Bd-JZ0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="9gf-uy-ZGQ"/>
+                            <constraint firstItem="wWA-Qe-qll" firstAttribute="baseline" secondItem="6Io-Bd-JZ0" secondAttribute="baseline" id="AAg-Ps-bdf"/>
+                            <constraint firstItem="j0z-70-dQT" firstAttribute="leading" secondItem="bXK-tk-i9y" secondAttribute="trailing" constant="20" id="BlU-He-ULY"/>
+                            <constraint firstItem="H6z-1l-YvQ" firstAttribute="centerY" secondItem="l4Q-Bc-8F9" secondAttribute="centerY" id="Coy-up-RMx"/>
+                            <constraint firstAttribute="trailing" secondItem="dCe-ZG-DPw" secondAttribute="trailing" constant="10" id="DyX-7A-Fhz"/>
+                            <constraint firstItem="l4Q-Bc-8F9" firstAttribute="leading" secondItem="H6z-1l-YvQ" secondAttribute="trailing" constant="20" id="FnQ-4G-UAs"/>
+                            <constraint firstItem="bXK-tk-i9y" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="25" id="Gvn-Cx-Lb3"/>
+                            <constraint firstItem="l4Q-Bc-8F9" firstAttribute="leading" secondItem="H6z-1l-YvQ" secondAttribute="trailing" constant="20" id="K0A-u8-ynl"/>
+                            <constraint firstItem="bXK-tk-i9y" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.75" id="PRx-EW-dFy"/>
+                            <constraint firstItem="H6z-1l-YvQ" firstAttribute="leading" secondItem="bXK-tk-i9y" secondAttribute="leading" id="dPe-8U-rgM"/>
+                            <constraint firstItem="H6z-1l-YvQ" firstAttribute="width" secondItem="bXK-tk-i9y" secondAttribute="width" id="jAS-O3-kO7"/>
+                            <constraint firstItem="dCe-ZG-DPw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="240" id="mqO-hs-zYb"/>
+                            <constraint firstAttribute="height" secondItem="dCe-ZG-DPw" secondAttribute="height" multiplier="5" id="o0v-Bq-agK"/>
+                            <constraint firstItem="j0z-70-dQT" firstAttribute="centerY" secondItem="bXK-tk-i9y" secondAttribute="centerY" id="ocJ-lt-dar"/>
+                            <constraint firstItem="dCe-ZG-DPw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="sZK-aU-kdM"/>
+                            <constraint firstItem="wWA-Qe-qll" firstAttribute="leading" secondItem="6Io-Bd-JZ0" secondAttribute="trailing" constant="100" id="yTf-8j-p6v"/>
+                            <constraint firstItem="6Io-Bd-JZ0" firstAttribute="top" secondItem="H6z-1l-YvQ" secondAttribute="bottom" constant="55" id="ykS-lB-75I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jAS-O3-kO7"/>
+                                <exclude reference="FnQ-4G-UAs"/>
+                                <exclude reference="18A-Ts-dUB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="logInTextField" destination="bXK-tk-i9y" id="JqK-jE-EdV"/>
+                        <outlet property="makeShaqTextField" destination="H6z-1l-YvQ" id="H7p-Js-K8c"/>
+                        <outlet property="responseLabel" destination="dCe-ZG-DPw" id="vak-Fe-9vq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="125" y="16"/>
         </scene>
     </scenes>
 </document>
